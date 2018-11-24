@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E17F4CC2-70B9-DD5B-8609-D030943E3048" name="KONTAKT">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>574F442E-7DF5-C255-4397-0A226DD02668</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_kontakt" id="D38F38E8-A0A4-F473-D7CA-FCE4FC90C294">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>A173FB3A-879B-45AC-484E-7E949E92ACC0</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="8008C034-AFE7-BFB2-9636-CA095E289A9B">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>289B7487-C04B-8DAE-3EC3-99DB12F4D76E</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="C8CC70C6-BA67-B447-9C2A-64D3CBAAEFA8">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>B545B6C7-EA53-7322-F9B2-FEA75E77A489</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ulice" id="81D429CD-4453-9FD5-0BEE-F01C4081BF19">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>6FD954C8-1885-BE94-ED8A-A9DDEE3A2C06</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="psc" id="8588DF19-C563-43E5-2310-1FE0E90C831B">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>1525BB4B-D48C-9C08-AFE1-3EE563933691</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mesto" id="90453E57-FE3A-C952-E4D5-02C20E9BD12D">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>67A4CE0C-A269-0ACF-5A66-1AE7998F3B85</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A9F1537-D014-9DF2-C745-8A759C3D2845" name="KONTAKT_PK">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>E2583608-DCB3-2C0C-3042-4EF3B504F276</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D38F38E8-A0A4-F473-D7CA-FCE4FC90C294"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

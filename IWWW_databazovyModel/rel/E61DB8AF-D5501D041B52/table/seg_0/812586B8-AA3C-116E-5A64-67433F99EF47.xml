@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="812586B8-AA3C-116E-5A64-67433F99EF47" name="trida_akce">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<ordsAlias>rel_trida_akce</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TRIDA_id_trida" id="E906D354-E0C8-28D5-6A96-84632A114AC8">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="707BADB9-FF26-C871-5762-27A4D59EFC66" referredColumn="2DABE0C7-5EAB-A494-07F7-FD30A2D55E70"/>
+</associations>
+</Column>
+<Column name="AKCE_id_akce" id="8BE576DC-B260-B72F-246D-30E832B2EAA9">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B2DC7FB-4BCE-F150-FA12-3D411819B49F" referredColumn="BD04E2FF-D100-AA4F-79BF-98B5522581B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA1FC8BD-84B2-6BD9-3499-00576D0CA334" name="rel_trida_akce_PK">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E906D354-E0C8-28D5-6A96-84632A114AC8"/>
+<colUsage columnID="8BE576DC-B260-B72F-246D-30E832B2EAA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AEB4A72-6EDB-19D9-FCEB-2788636A8EDA" name="rel_trida_akce_TRIDA_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>6616D9D3-CC04-E864-843F-5A5F349EB442</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E906D354-E0C8-28D5-6A96-84632A114AC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68CAA192-953C-01B8-4B95-22AA34AE51FF" name="rel_trida_akce_AKCE_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>6616D9D3-CC04-E864-843F-5A5F349EB442</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BE576DC-B260-B72F-246D-30E832B2EAA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

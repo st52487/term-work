@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00873478-7D57-97BF-31AA-8D88B9F0C843" name="UCITEL">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:01:35 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_ucitel" id="0528B93B-9FD7-368E-44BF-028B353BE327">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:01:49 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jmeno" id="49F36FEA-592C-30EC-FF42-86DC87FCD97F">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:01:53 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prijmeni" id="B6179873-8A1B-0570-0C83-7233045CDE24">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:01:56 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role" id="F4AB65CD-9064-B551-90D4-93E572F4F420">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:40:21 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_trida" id="5CB55BDE-8C3A-7EB3-13DB-875614E7C6DC">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:45:03 UTC</createdTime>
+<generatorID>46D5EC8E-48E5-E1D3-D9C9-96859441C0F9</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<referedAttribute>CB64237B-0570-4F6C-1689-412559DED4B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="58025106-FA2A-565B-E6FD-1729C0D793B6" name="Učitel PK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:03:23 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0528B93B-9FD7-368E-44BF-028B353BE327</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

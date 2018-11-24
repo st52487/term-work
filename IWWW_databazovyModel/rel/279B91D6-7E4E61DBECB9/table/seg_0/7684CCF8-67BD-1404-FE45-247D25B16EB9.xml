@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7684CCF8-67BD-1404-FE45-247D25B16EB9" name="UCITEL">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>00873478-7D57-97BF-31AA-8D88B9F0C843</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ucitel" id="031FF778-9DC9-EF31-B8AC-79975DA5DE56">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>0528B93B-9FD7-368E-44BF-028B353BE327</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="DF5F79B7-4D8A-0323-BAEC-23BC3476EC98">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>49F36FEA-592C-30EC-FF42-86DC87FCD97F</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni" id="BE81CEEE-BCE1-2B2C-61AE-71F1DEE3E36B">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>B6179873-8A1B-0570-0C83-7233045CDE24</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reditel" id="85A347C4-8DBE-1AB0-0BC6-F2D840B929D8">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>014E2675-9D11-3B08-25C0-F9DDF5EB137F</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UCITEL_id_ucitel" id="49707DE7-5696-92D3-847A-7502C36CEA3A">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>9DFF0177-AE6F-0EFD-6F66-3D598805F483</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82CDA5FC-BC78-8ABB-2FFC-45123C4FA3D7" referredColumn="031FF778-9DC9-EF31-B8AC-79975DA5DE56"/>
+</associations>
+</Column>
+<Column name="KONTAKT_id_kontakt" id="277BD614-D08B-58B5-1E97-864D5B2FE183">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>B1323DFF-DB8B-CEB9-8E8B-7EBC46E7B7BB</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0588A76D-F3DD-BABD-4F6C-309E897E6DD8" referredColumn="B24F5BE6-0E8A-B1CA-00C6-39139D6C40F1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ECB17FB2-3459-A20F-2F5F-38BF255C8285" name="UCITEL_PK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>58025106-FA2A-565B-E6FD-1729C0D793B6</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="031FF778-9DC9-EF31-B8AC-79975DA5DE56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D1E70EB-0194-07FD-BA05-92F3413DC064" name="UCITEL__IDX">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>233A1F6C-CED6-50BD-8905-39A248C94B1F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="49707DE7-5696-92D3-847A-7502C36CEA3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65EF8B35-0F4A-FC5B-8B92-23F0BB0F95D4" name="UCITEL_UCITEL_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>233A1F6C-CED6-50BD-8905-39A248C94B1F</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49707DE7-5696-92D3-847A-7502C36CEA3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FFEF167-1F27-0071-072D-72C78F7B24B1" name="UCITEL_KONTAKT_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>0FA31DEA-8DC3-DDE7-47CB-AB6252498198</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="277BD614-D08B-58B5-1E97-864D5B2FE183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

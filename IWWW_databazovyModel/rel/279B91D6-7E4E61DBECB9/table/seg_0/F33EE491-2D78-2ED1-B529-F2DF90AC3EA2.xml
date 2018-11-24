@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F33EE491-2D78-2ED1-B529-F2DF90AC3EA2" name="PRIHLASOVACI_UDAJE">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>BACBFD15-C767-77B7-6A45-12CAE12FCB78</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_udaj" id="455581DB-B154-C191-3E5E-B7BBC049A450">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>26E21FFD-333C-B380-D29F-678EF39760B5</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prihlasovaciJmeno" id="3B7797C4-7F6C-49E1-168F-361341FD0FB5">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>F4A3819B-F33E-3F4B-9F3A-F2A09279C771</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="heslo" id="7F9A4E57-576E-9D96-100F-03D94C883DC5">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>37A1C8AF-C6A1-E352-6692-F74CE5C04110</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UCITEL_id_ucitel" id="9CC4AD95-8B51-38CA-6EBF-A1B0AD09C4E9">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>67C1F395-D470-5A2A-2213-B0EB9963A540</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="009852D3-3D44-6872-9A23-1E556A3B8515" referredColumn="031FF778-9DC9-EF31-B8AC-79975DA5DE56"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD63B8B4-A7CC-DB43-762B-3A1094D15471" name="PRIHLASOVACI_UDAJE_PK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>525F3095-24E0-AD7A-7656-2E7B1188A1C8</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="455581DB-B154-C191-3E5E-B7BBC049A450"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="841CD066-6027-B6C1-FFDD-B01D9413BE18" name="PRIHLASOVACI_UDAJE_UCITEL_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>671381A5-7EEB-D8FD-A85A-478BDD35DB43</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CC4AD95-8B51-38CA-6EBF-A1B0AD09C4E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

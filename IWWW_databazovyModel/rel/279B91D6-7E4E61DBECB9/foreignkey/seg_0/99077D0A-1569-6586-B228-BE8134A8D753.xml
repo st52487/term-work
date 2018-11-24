@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="99077D0A-1569-6586-B228-BE8134A8D753" containerWithKeyObject="47892614-BAC4-3B93-F48B-63A0C255187F" localFKIndex="C34B5493-E0F0-8D2F-33B7-D55C379BF3E2" name="rel_trida_akce_AKCE_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>6616D9D3-CC04-E864-843F-5A5F349EB442</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<referredTableLongName>AKCE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>16672B74-55DA-1BFC-B06A-D29F216B70DF</referredTableID>
+<keyObject>F538271C-BC62-81FC-8720-EAD6CFB42A0A</keyObject>
+<referredKeyID>F538271C-BC62-81FC-8720-EAD6CFB42A0A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_akce</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CB01A38-023A-7C37-3C2D-5D67D24AB7BF" name="TRIDA">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:06:53 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_trida" id="CB64237B-0570-4F6C-1689-412559DED4B9">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:06:59 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="DD26E535-A08C-B072-B558-004984265EB2">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:07:02 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="maxVek" id="92959D3A-B8D8-A8BB-7CA0-EEA98A00EBA7">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:07:10 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="popis" id="A52CAD48-0A42-84D6-9C1E-5B0782FA7F2A">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:07:15 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_jidelnicek" id="B48CDEE3-44B1-04F0-930C-4369C8D9BD46">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:43:52 UTC</createdTime>
+<generatorID>E8C23B53-38E6-C64C-9BBD-F9113B0F0687</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<referedAttribute>13CABE5A-5617-EEC2-F0AD-1F0CB69CBB02</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A336D8C7-45A1-FDD0-A134-F8F54FEE0065" name="TRIDA PK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:07:59 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CB64237B-0570-4F6C-1689-412559DED4B9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

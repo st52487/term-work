@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16672B74-55DA-1BFC-B06A-D29F216B70DF" name="AKCE">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>5429788B-37D9-F316-C4F7-3B338D372B1C</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_akce" id="E0A62AC6-1307-B0D8-6566-97099303F6B2">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>FBB7B60C-473F-5121-0D7E-81DFBAF81BA3</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="E25F3960-DC11-D49C-7735-A2086A9E2951">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>2290C682-99B5-0761-0B98-7BD0622AC3FB</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zkratka" id="70E35298-7944-0605-7BC8-2D212644007B">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>417F51F8-CDCA-3F4A-DDE6-20A036472C51</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pocetDetiNaAkci" id="2864E6F8-AA36-A859-5B0A-7D138D325237">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>56C0484C-6DD6-2814-EEF7-3C6B1DE57676</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="21953582-77EC-B402-774A-56A8803E198C">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>9A62CAE4-17EA-98DA-B317-D3453C6693D8</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F538271C-BC62-81FC-8720-EAD6CFB42A0A" name="AKCE_PK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>DBDB58B0-96E7-E1E1-2C87-60F359C5CF43</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0A62AC6-1307-B0D8-6566-97099303F6B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

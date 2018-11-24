@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86F7119D-FA11-6251-DE97-932EB1496DE9" name="DITE">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>510F0E43-E361-0C97-2E17-6208A437E40A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dite" id="1959B39B-A7D9-33BC-1FCF-601580F60A76">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>2300BF47-25BB-C09E-376D-59A25015439A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="04FBFC6D-C05C-F8EF-5919-632EDDC15831">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>2D98B3A3-A5B6-EC5D-8FD4-900815AFE064</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni" id="3854DA04-08BE-BE21-71B9-F62F08267C9E">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>860007E3-FF1E-091E-DA4A-7A91E7CB7F78</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vek" id="B277D9A5-2320-80A8-73B5-806FA90FDE71">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>5FC30D7C-CD38-D923-5FF4-73FDD4439310</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pohlavi" id="23217195-23F6-78C3-B553-C4268CDC5A9A">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>4E9D7DDB-4F57-3348-1615-9F3CBD197A38</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRIDA_id_trida" id="116E2731-622A-A6A3-4688-F5E0B9B22288">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>7D1623DF-615A-EE5F-0C83-1C6FD146296A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A249CBDD-ED5B-B90E-6472-8BC79698AAA1" referredColumn="1C16A5D1-36A3-4DFD-67CE-A9833B6CB504"/>
+</associations>
+</Column>
+<Column name="KONTAKT_id_kontakt" id="10D1C293-E41D-1530-9DBF-A71D7E1E04CB">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>8D8339B9-49B9-C064-5AAF-33FFE728AC1E</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BEE859A-A89C-D9B9-E1DC-A159FB362A6A" referredColumn="B24F5BE6-0E8A-B1CA-00C6-39139D6C40F1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="772C45A7-EC40-742F-8309-E3C95E82B5FB" name="DITE_PK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>49ACACD8-9C52-6830-DB00-B7A881CDB7FF</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1959B39B-A7D9-33BC-1FCF-601580F60A76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C31D22E-D67D-A539-FD51-AA8A9FC7F646" name="DITE_KONTAKT_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>939ED39C-424C-7593-27CC-D49BFD0DAE8C</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10D1C293-E41D-1530-9DBF-A71D7E1E04CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="389AC7D2-AA0F-7B21-ABEA-DFAF4C980FB5" name="DITE_TRIDA_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>4BB63DEB-401D-0BD8-90F3-27D9A03063B2</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="116E2731-622A-A6A3-4688-F5E0B9B22288"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

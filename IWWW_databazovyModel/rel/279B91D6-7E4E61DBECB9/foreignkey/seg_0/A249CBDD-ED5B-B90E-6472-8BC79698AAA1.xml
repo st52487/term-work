@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A249CBDD-ED5B-B90E-6472-8BC79698AAA1" containerWithKeyObject="86F7119D-FA11-6251-DE97-932EB1496DE9" localFKIndex="389AC7D2-AA0F-7B21-ABEA-DFAF4C980FB5" name="DITE_TRIDA_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:36:56 UTC</createdTime>
+<generatorID>4BB63DEB-401D-0BD8-90F3-27D9A03063B2</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<referredTableLongName>TRIDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>631D0D98-7D96-E584-FBBF-F71ABDC77CEE</referredTableID>
+<keyObject>68F01A86-159F-AAAA-5D18-3F7B3E1517E1</keyObject>
+<referredKeyID>68F01A86-159F-AAAA-5D18-3F7B3E1517E1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_trida</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

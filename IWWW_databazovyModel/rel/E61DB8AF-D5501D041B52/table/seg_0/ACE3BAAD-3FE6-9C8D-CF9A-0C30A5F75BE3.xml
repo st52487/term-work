@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACE3BAAD-3FE6-9C8D-CF9A-0C30A5F75BE3" name="PRIHLASOVACI_UDAJE">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>BACBFD15-C767-77B7-6A45-12CAE12FCB78</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_udaj" id="08AF4ED6-4A32-DB83-31A5-A9F2B6028E31">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>26E21FFD-333C-B380-D29F-678EF39760B5</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prihlasovaciJmeno" id="60C81A96-F97E-35D5-DC37-6BC7F3C69387">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>F4A3819B-F33E-3F4B-9F3A-F2A09279C771</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="heslo" id="43DA43E8-B01F-F96D-319A-2599A1C3D320">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>37A1C8AF-C6A1-E352-6692-F74CE5C04110</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UCITEL_id_ucitel" id="3C4FEEA8-4E05-D8C1-4C6E-667E602532E6">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>B19AA4C4-3098-8EFF-4690-2D7D91DA9893</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6501905E-D9F2-08D6-E447-772B3AB154E2" referredColumn="FB676103-D243-20AC-2756-54A72EAB2BA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76D29F9D-968A-9F46-6DB0-57E5601B8251" name="PRIHLASOVACI_UDAJE_PK">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>525F3095-24E0-AD7A-7656-2E7B1188A1C8</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08AF4ED6-4A32-DB83-31A5-A9F2B6028E31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCBCFA90-F459-DABE-0E2E-BD61B1215E01" name="PRIHLASOVACI_UDAJE__IDX">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CD63551E-E82C-82BA-8113-0662AA90DFEF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3C4FEEA8-4E05-D8C1-4C6E-667E602532E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E46ECF85-C834-48AA-A14C-185FF8AD5D80" name="PRIHLASOVACI_UDAJE_UCITEL_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>CD63551E-E82C-82BA-8113-0662AA90DFEF</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C4FEEA8-4E05-D8C1-4C6E-667E602532E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

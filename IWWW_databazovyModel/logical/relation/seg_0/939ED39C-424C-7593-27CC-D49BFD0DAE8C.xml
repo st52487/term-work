@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="dite_kontakt" directorySegmentName="seg_0" id="939ED39C-424C-7593-27CC-D49BFD0DAE8C">
+<createdBy>David</createdBy>
+<createdTime>2018-10-21 18:17:41 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<sourcePk>49ACACD8-9C52-6830-DB00-B7A881CDB7FF</sourcePk>
+<targetPk>E2583608-DCB3-2C0C-3042-4EF3B504F276</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>510F0E43-E361-0C97-2E17-6208A437E40A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>574F442E-7DF5-C255-4397-0A226DD02668</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

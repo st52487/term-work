@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ucitel_udaje" directorySegmentName="seg_0" id="CD63551E-E82C-82BA-8113-0662AA90DFEF">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:34:19 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<sourcePk>58025106-FA2A-565B-E6FD-1729C0D793B6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>00873478-7D57-97BF-31AA-8D88B9F0C843</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>BACBFD15-C767-77B7-6A45-12CAE12FCB78</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

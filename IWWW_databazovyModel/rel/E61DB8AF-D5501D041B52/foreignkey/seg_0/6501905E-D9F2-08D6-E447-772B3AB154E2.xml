@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6501905E-D9F2-08D6-E447-772B3AB154E2" containerWithKeyObject="ACE3BAAD-3FE6-9C8D-CF9A-0C30A5F75BE3" localFKIndex="E46ECF85-C834-48AA-A14C-185FF8AD5D80" name="PRIHLASOVACI_UDAJE_UCITEL_FK">
+<createdBy>David</createdBy>
+<createdTime>2018-11-24 11:48:05 UTC</createdTime>
+<generatorID>CD63551E-E82C-82BA-8113-0662AA90DFEF</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<referredTableLongName>UCITEL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C2EBE21D-DCC0-0262-AF7D-12D930746D79</referredTableID>
+<keyObject>250992F8-98F2-9000-32C8-FECA641C3441</keyObject>
+<referredKeyID>250992F8-98F2-9000-32C8-FECA641C3441</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_ucitel</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

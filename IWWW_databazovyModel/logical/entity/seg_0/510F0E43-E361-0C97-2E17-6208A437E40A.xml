@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="510F0E43-E361-0C97-2E17-6208A437E40A" name="DITE">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:00:16 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_dite" id="2300BF47-25BB-C09E-376D-59A25015439A">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:00:29 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jmeno" id="2D98B3A3-A5B6-EC5D-8FD4-900815AFE064">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:00:37 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prijmeni" id="860007E3-FF1E-091E-DA4A-7A91E7CB7F78">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:00:42 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vek" id="5FC30D7C-CD38-D923-5FF4-73FDD4439310">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:00:45 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pohlavi" id="4E9D7DDB-4F57-3348-1615-9F3CBD197A38">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:00:48 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_trida" id="7D1623DF-615A-EE5F-0C83-1C6FD146296A">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:08:27 UTC</createdTime>
+<generatorID>4BB63DEB-401D-0BD8-90F3-27D9A03063B2</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<referedAttribute>CB64237B-0570-4F6C-1689-412559DED4B9</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_kontakt" id="8D8339B9-49B9-C064-5AAF-33FFE728AC1E">
+<createdBy>David</createdBy>
+<createdTime>2018-10-25 10:19:47 UTC</createdTime>
+<generatorID>939ED39C-424C-7593-27CC-D49BFD0DAE8C</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A173FB3A-879B-45AC-484E-7E949E92ACC0</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="49ACACD8-9C52-6830-DB00-B7A881CDB7FF" name="Dite PK">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:01:18 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2300BF47-25BB-C09E-376D-59A25015439A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_trida_dite" directorySegmentName="seg_0" id="4BB63DEB-401D-0BD8-90F3-27D9A03063B2">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 16:08:27 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="279B91D6-D80F-6A78-9804-7E4E61DBECB9" value="true"/>
+</engineerTo>
+<sourcePk>A336D8C7-45A1-FDD0-A134-F8F54FEE0065</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>má</nameOnSource>
+<nameOnTarget>patří</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0CB01A38-023A-7C37-3C2D-5D67D24AB7BF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>510F0E43-E361-0C97-2E17-6208A437E40A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="IWWW_databazovyModel" id="EE3B4908-EA50-604E-C02E-67DE6AC87491" version="3.5">
+<createdBy>David</createdBy>
+<createdTime>2018-10-20 15:59:30 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EE3B4908-EA50-604E-C02E-67DE6AC87491</designId>
+</OSDM_Design>
