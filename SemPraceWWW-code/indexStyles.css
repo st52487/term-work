@@ -1,88 +1,93 @@
 body {
     font-family: Tahoma, Verdana, Arial, lucida, sans-serif;
     font-size: 14px;
-    text-align: left;
+    text-align: center  ;
     display: block;
     background-color: lightblue;
 }
 
-.item1 { grid-area: header; 
-	height:270px;
-	background-color: white;
-	background-image: url(images/aa.jpg);
-	background-position: center;	
-	background-repeat: no-repeat;
+.item1 {
+    grid-area: header;
+    height: 270px;
+    background-color: white;
+    background-image: url(images/children.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 
-	}
-.item2 { grid-area: menu;
-margin: auto;
-width:135px;
-height: 960px;
-    grid-column-start: 1;
-    grid-column-end: 2;}
-.item3 { grid-area: main; 
-height:960px;
-    grid-column-start: 2;
-    grid-column-end: 5;
-background-color: white;}
-.item4 { grid-area: right;
-height:960px;
-    grid-column-start: 5;
-    grid-column-end: 6;
-background-color: white;}
-.item5 { grid-area: footer;
-	height: 120px;
-	}
+}
+
+.item2 {
+    grid-area: menu;
+    width: 150px;
+    padding-left: 75px;
+    padding-right: 75px;
+    height: 960px;
+}
+
+.item3 {
+    grid-area: main;
+    height: 960px;
+
+    white-space: normal;
+    background-color: white;
+}
+
+.item5 {
+    grid-area: footer;
+    height: 120px;
+    text-align: center;
+}
+
+.item4{
+    grid-area: right;
+    background-color: lightblue;
+    width:  300px;
+}
 
 .grid-container {
     display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'footer footer footer footer footer footer';
-  grid-gap: 5px;
-  padding: 10px;
+    grid-template-areas: 'header header header header header header' 'menu main main main main right' 'footer footer footer footer footer footer';
+    grid-gap: 5px;
+    padding: 10px;
 }
+
 .grid-container > div {
-  /*background-color: rgba(255, 255, 255, 0.8); /*smazat potom*/
-  text-align: center;
-  padding: 20px 0;
-    grid-template-columns: repeat(auto-fit, 100px);
-    width: auto;
+    text-align: center;
+    /*background-color: red; /*smazat potom*/
+
 }
 
 /*------------------------------*/
 
-.nav{
-	width: 200px;
+.nav {
+    width: 150px;
 }
-
-
 
 .nav ul {
-  list-style: none;
-  background-color: #0000FF;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    background-color: #0000FF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
+
 .nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
 }
- 
+
 .nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
 }
- 
+
 .nav a:hover {
-  background-color: #FF8000;
+    background-color: #FF8000;
 }
 
 
