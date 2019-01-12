@@ -19,7 +19,8 @@ class Authentication{
         $this->conn = Connection::getPdoInstance();
     }
 
-    public function login($email, $password){
+    public function login(string $email, string $password) : bool
+    {
         $stmt = $this->conn->prepare("SELECT id, username, email FROM users WHERE email= :email and password = :password");
         $stmt->bindParam(':email', $_POST["loginMail"]);
         $stmt->bindParam(':password', $_POST["loginPassword"]);
