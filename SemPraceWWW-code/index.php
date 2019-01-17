@@ -30,7 +30,7 @@ function __autoload($className)
                 <li class="home"><a>Akce</a></li>
                 <li class="home"><a>Jídelníček</a></li>
                 <li class="home"><a>Kontakty</a></li>
-                <?php if (!empty($_SESSION["user_id"])) { ?>
+                <?php if (!empty($_SESSION["username"])) { ?>
                     <li class="tutorials"><a href="<?= BASE_URL . "?page=user-read-all" ?>">Zamestnanci</a></li>
                     <li class="tutorials"><a href="<?= BASE_URL . "?page=logout" ?>">Logout</a></li>
                     <?php if ($_SESSION["role"] == 'reditel') { ?>

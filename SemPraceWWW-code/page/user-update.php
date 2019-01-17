@@ -57,7 +57,7 @@ if (empty($errorFeedbacks)) { //load data origin data from database
 } else { //in case of any error, load data
     $emailValue = $_POST["email"];
     $usernameValue = $_POST["username"];
-    $passwordValue = $_POST["password"];
+    $passwordValue = md5($_POST["password"]);
     $descriptionValue = $_POST["description"];
 }
 ?>
