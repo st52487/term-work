@@ -1,18 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="trida_ucitel" directorySegmentName="seg_0" id="46D5EC8E-48E5-E1D3-D9C9-96859441C0F9">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="role_ucitel" directorySegmentName="seg_0" id="83C2A218-2E64-13D9-2C24-4CDA0019F230">
 <createdBy>David</createdBy>
-<createdTime>2018-11-24 11:45:03 UTC</createdTime>
+<createdTime>2019-01-17 17:47:52 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="15767784-5A52-8056-5A61-0909C9CBE533" value="true"/>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
 </engineerTo>
-<sourcePk>A336D8C7-45A1-FDD0-A134-F8F54FEE0065</sourcePk>
-<targetPk>58025106-FA2A-565B-E6FD-1729C0D793B6</targetPk>
+<sourcePk>6147991C-CD7C-D25B-4708-6E2B1708D309</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>0CB01A38-023A-7C37-3C2D-5D67D24AB7BF</sourceEntity>
+<sourceEntity>88EA2F30-F9F5-9D27-301F-128ADBA1D220</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>00873478-7D57-97BF-31AA-8D88B9F0C843</targetEntity>
 <transferable>true</transferable>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4671E784-1911-7EF9-05CB-4D7EB9DA368E" name="jidelnicek">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>DDAAFAB6-18D4-5F2F-4974-FA242AB47FA5</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_jidelnicek" id="D4343DA1-88B0-6248-C4DD-8C6CF4238C9D">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>13CABE5A-5617-EEC2-F0AD-1F0CB69CBB02</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="polivka" id="9B367F9F-7EFC-68F8-3DD5-382C8F4A635A">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>D9F8A6A8-C0C7-8CBD-FEE3-11B665790264</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hlavni_jidlo" id="BDAEE0D8-8FD7-842C-53E7-AF35180B5AA4">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>0FF69985-8651-0757-C3F0-0EC8E93E0C2D</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="svacina" id="764A3458-DFE7-B400-C7AA-6325C8F0A0F0">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>35E80EA9-9D7B-8BB4-3438-59E06A4B5C9A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRIDA_id_trida" id="C0CA91E7-1614-FE46-C33B-6CFDE451570E">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>18F5AC68-37D4-6DEE-5121-0A3D210AF7F9</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23DEF854-F2F7-1C6C-CECD-12774C9E56B3" referredColumn="FD304BFF-7D98-3F35-0D01-5D04618E6F34"/>
+</associations>
+</Column>
+<Column name="datum" id="8944D879-4728-B42A-F499-848070E451E3">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>A28733EA-20EB-4A4D-6952-F2628FD29209</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2F785E1-CBBF-68C7-EE4F-E8EDC7A96591" name="jidelnicek_PK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>1CEA21BF-85B1-78C8-AA29-3A38D56437C1</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4343DA1-88B0-6248-C4DD-8C6CF4238C9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CC34DB0-CD1F-ED92-A3F6-91027480C478" name="jidelnicek_TRIDA_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>F1D432B9-9CAD-0E58-79AD-FB7D60465C95</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0CA91E7-1614-FE46-C33B-6CFDE451570E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

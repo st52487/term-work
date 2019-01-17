@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D682A71C-6243-E6F3-1B4F-8E7A0DBC42F5" name="UCITEL">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>00873478-7D57-97BF-31AA-8D88B9F0C843</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ucitel" id="F126AB47-F676-D7F5-0229-C68A98640921">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>0528B93B-9FD7-368E-44BF-028B353BE327</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="7AC673D3-25FD-9547-AA18-5449E702C3AC">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>49F36FEA-592C-30EC-FF42-86DC87FCD97F</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni" id="A7B9DB32-F1D5-6A77-9F0A-EDAC54C5AE3A">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>B6179873-8A1B-0570-0C83-7233045CDE24</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLE_id_role" id="CEF44F21-144F-48A3-B2FA-DFDBAED1D547">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>F2F7FC46-DF51-16D2-5659-36C6708FFC14</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6EE1E68-AAEB-F83B-3DCC-4D3579E794B7" referredColumn="65C1DFD7-78BB-D63C-044D-9579CA7B7A3F"/>
+</associations>
+</Column>
+<Column name="TRIDA_id_trida" id="7801A13C-B9F2-C1F6-F4BD-D832F4202B68">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>395A325F-3C56-2044-DA56-8E93513EEC58</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59050277-C13B-CB88-AD27-5FF111EC8C73" referredColumn="FD304BFF-7D98-3F35-0D01-5D04618E6F34"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15C6C295-EC4C-234E-0070-806EDACDD7B2" name="UCITEL_PK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>58025106-FA2A-565B-E6FD-1729C0D793B6</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F126AB47-F676-D7F5-0229-C68A98640921"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8467A6A6-9E83-9D8F-F42E-C87C22B6F3AD" name="UCITEL_ROLE_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>83C2A218-2E64-13D9-2C24-4CDA0019F230</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEF44F21-144F-48A3-B2FA-DFDBAED1D547"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF7D9AB0-632A-BA14-BB5F-FE13B933BBE7" name="UCITEL_TRIDA_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>46D5EC8E-48E5-E1D3-D9C9-96859441C0F9</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7801A13C-B9F2-C1F6-F4BD-D832F4202B68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

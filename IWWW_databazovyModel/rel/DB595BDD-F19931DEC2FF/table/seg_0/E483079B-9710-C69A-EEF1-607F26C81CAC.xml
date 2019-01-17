@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E483079B-9710-C69A-EEF1-607F26C81CAC" name="TRIDA">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>0CB01A38-023A-7C37-3C2D-5D67D24AB7BF</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_trida" id="6A5B7BD2-D640-557A-6053-EF35D0C7E8C4">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>CB64237B-0570-4F6C-1689-412559DED4B9</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="92826592-22B6-7F80-317D-CEE195E2FE5B">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>DD26E535-A08C-B072-B558-004984265EB2</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="maxVek" id="A829C546-11E1-CCF2-875D-2F214E2AE8EE">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>92959D3A-B8D8-A8BB-7CA0-EEA98A00EBA7</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="65B6585A-05AE-A421-FA96-7C03E25095CA">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>A52CAD48-0A42-84D6-9C1E-5B0782FA7F2A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UCITEL_id_ucitel" id="764F25EF-72FA-2D6C-1D4E-ECDDBBBB90C8">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>392B53A2-F9DC-D60D-F414-61B8D6BA4465</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AB6596A-691C-09BB-8B85-0ED555AD48A8" referredColumn="5A26A6E0-26B6-06D3-3980-66FB40822FF9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAEE3E0B-803A-782B-B6E6-6A2E1EF1BC80" name="TRIDA_PK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>A336D8C7-45A1-FDD0-A134-F8F54FEE0065</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A5B7BD2-D640-557A-6053-EF35D0C7E8C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63D5153F-5420-69FE-69F2-836514B67123" name="TRIDA_UCITEL_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:49:24 UTC</createdTime>
+<generatorID>46D5EC8E-48E5-E1D3-D9C9-96859441C0F9</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="764F25EF-72FA-2D6C-1D4E-ECDDBBBB90C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

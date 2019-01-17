@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D24CF37-8529-8FA8-D400-D509F14A4C2D" name="DITE">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>510F0E43-E361-0C97-2E17-6208A437E40A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dite" id="F1FF44B3-90AC-E6A4-DB6D-F835874784C7">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>2300BF47-25BB-C09E-376D-59A25015439A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="68705037-6F4D-B333-CC36-C9BFB39DD782">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>2D98B3A3-A5B6-EC5D-8FD4-900815AFE064</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni" id="634AEC90-4E1C-F37E-A65B-D33D9CFDD3D3">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>860007E3-FF1E-091E-DA4A-7A91E7CB7F78</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vek" id="D7914759-1C1B-FCDB-D72E-FA4ED53378D1">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>5FC30D7C-CD38-D923-5FF4-73FDD4439310</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pohlavi" id="6ECEB1B5-3F7E-FE5C-096A-1A078932E9AB">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>4E9D7DDB-4F57-3348-1615-9F3CBD197A38</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRIDA_id_trida" id="A575BB50-B996-C97E-A6A4-9D4CFCC1AF39">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>7D1623DF-615A-EE5F-0C83-1C6FD146296A</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4434C453-95D1-06A7-8999-3887A9284BDA" referredColumn="FD304BFF-7D98-3F35-0D01-5D04618E6F34"/>
+</associations>
+</Column>
+<Column name="KONTAKT_id_kontakt" id="FC10FAB2-51FE-BCE6-5B85-FD5FFDA6B42C">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>8D8339B9-49B9-C064-5AAF-33FFE728AC1E</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61461541-4CA9-DE13-517E-165154538251" referredColumn="C42FDB9E-88DA-6A0F-F396-7E74FF32AFA6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="81469C1A-E757-3EE3-1344-073C3C76A2E6" name="DITE_PK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>49ACACD8-9C52-6830-DB00-B7A881CDB7FF</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1FF44B3-90AC-E6A4-DB6D-F835874784C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB55AD7B-28E3-AEA4-DBF6-25892C14F20E" name="DITE_KONTAKT_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>939ED39C-424C-7593-27CC-D49BFD0DAE8C</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC10FAB2-51FE-BCE6-5B85-FD5FFDA6B42C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F7C1C37-9B2F-C923-C559-4047E08E1DD3" name="DITE_TRIDA_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>4BB63DEB-401D-0BD8-90F3-27D9A03063B2</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A575BB50-B996-C97E-A6A4-9D4CFCC1AF39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

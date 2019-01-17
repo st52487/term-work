@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BACBFD15-C767-77B7-6A45-12CAE12FCB78" name="PRIHLASOVACI_UDAJE">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BACBFD15-C767-77B7-6A45-12CAE12FCB78" name="users">
 <createdBy>David</createdBy>
 <createdTime>2018-10-21 18:25:19 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2018-10-21 18:25:29 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2018-10-21 18:25:32 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,7 +45,7 @@
 <createdTime>2018-10-21 18:25:36 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,9 +59,10 @@
 <generatorID>CD63551E-E82C-82BA-8113-0662AA90DFEF</generatorID>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
 </engineerTo>
 <referedAttribute>0528B93B-9FD7-368E-44BF-028B353BE327</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -73,7 +74,7 @@
 <createdTime>2018-10-21 18:25:41 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

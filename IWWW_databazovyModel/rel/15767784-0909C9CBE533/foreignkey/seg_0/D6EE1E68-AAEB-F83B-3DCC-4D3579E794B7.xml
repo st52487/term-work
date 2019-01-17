@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D6EE1E68-AAEB-F83B-3DCC-4D3579E794B7" containerWithKeyObject="D682A71C-6243-E6F3-1B4F-8E7A0DBC42F5" localFKIndex="8467A6A6-9E83-9D8F-F42E-C87C22B6F3AD" name="UCITEL_ROLE_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>83C2A218-2E64-13D9-2C24-4CDA0019F230</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<referredTableLongName>ROLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DE4533F1-C124-52CC-0003-1DD5B0B0FBBD</referredTableID>
+<keyObject>736136F1-2D2D-8854-E0A8-CF17160330B5</keyObject>
+<referredKeyID>736136F1-2D2D-8854-E0A8-CF17160330B5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_role</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

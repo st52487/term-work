@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="61461541-4CA9-DE13-517E-165154538251" containerWithKeyObject="9D24CF37-8529-8FA8-D400-D509F14A4C2D" localFKIndex="EB55AD7B-28E3-AEA4-DBF6-25892C14F20E" name="DITE_KONTAKT_FK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 20:33:39 UTC</createdTime>
+<generatorID>939ED39C-424C-7593-27CC-D49BFD0DAE8C</generatorID>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<referredTableLongName>KONTAKT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A4368AD4-9A2F-6C7E-409C-D3DE88B9FFD1</referredTableID>
+<keyObject>9976667A-E9BE-97FC-DE3D-7E617BECCB62</keyObject>
+<referredKeyID>9976667A-E9BE-97FC-DE3D-7E617BECCB62</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_kontakt</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

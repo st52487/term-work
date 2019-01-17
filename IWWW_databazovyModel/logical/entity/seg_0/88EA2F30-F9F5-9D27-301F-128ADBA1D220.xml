@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88EA2F30-F9F5-9D27-301F-128ADBA1D220" name="ROLE">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:45:59 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_role" id="3196BF5A-A77A-C4B0-B447-E318D4F59393">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:46:06 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="druhRole" id="74F39F48-6181-653C-B9B2-516B7E1E031A">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:46:33 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6147991C-CD7C-D25B-4708-6E2B1708D309" name="ROLE PK">
+<createdBy>David</createdBy>
+<createdTime>2019-01-17 17:46:58 UTC</createdTime>
+<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
+<engineerTo>
+<item key="DB595BDD-C8D5-07E4-092B-F19931DEC2FF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3196BF5A-A77A-C4B0-B447-E318D4F59393</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

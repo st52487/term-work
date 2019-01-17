@@ -4,7 +4,7 @@
 <createdTime>2018-10-20 16:06:53 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="15767784-5A52-8056-5A61-0909C9CBE533" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2018-10-20 16:06:59 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="15767784-5A52-8056-5A61-0909C9CBE533" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2018-10-20 16:07:02 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="15767784-5A52-8056-5A61-0909C9CBE533" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,7 +45,7 @@
 <createdTime>2018-10-20 16:07:10 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="15767784-5A52-8056-5A61-0909C9CBE533" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,7 +57,7 @@
 <createdTime>2018-10-20 16:07:15 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="15767784-5A52-8056-5A61-0909C9CBE533" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -66,20 +66,6 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_jidelnicek" id="B48CDEE3-44B1-04F0-930C-4369C8D9BD46">
-<createdBy>David</createdBy>
-<createdTime>2018-11-24 11:43:52 UTC</createdTime>
-<generatorID>E8C23B53-38E6-C64C-9BBD-F9113B0F0687</generatorID>
-<ownerDesignName>IWWW_databazovyModel</ownerDesignName>
-<engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
-</engineerTo>
-<referedAttribute>13CABE5A-5617-EEC2-F0AD-1F0CB69CBB02</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A336D8C7-45A1-FDD0-A134-F8F54FEE0065" name="TRIDA PK">
@@ -87,7 +73,7 @@
 <createdTime>2018-10-20 16:07:59 UTC</createdTime>
 <ownerDesignName>IWWW_databazovyModel</ownerDesignName>
 <engineerTo>
-<item key="E61DB8AF-30B1-C109-B34E-D5501D041B52" value="true"/>
+<item key="15767784-5A52-8056-5A61-0909C9CBE533" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
