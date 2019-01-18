@@ -29,14 +29,10 @@ function __autoload($className)
                 <li class="tutorials"><a href="<?= BASE_URL . "?page=zvolTridu" ?>">Třídy</a></li>
                 <li class="home"><a>Akce</a></li>
                 <li class="home"><a>Jídelníček</a></li>
-                <li class="home"><a>Kontakty</a></li>
+                <li class="tutorials"><a href="<?= BASE_URL . "?page=user-read-all" ?>">Zamestnanci</a></li>
                 <?php if (!empty($_SESSION["username"])) { ?>
-                    <li class="tutorials"><a href="<?= BASE_URL . "?page=user-read-all" ?>">Zamestnanci</a></li>
+                    <li class="tutorials"><a href="<?= BASE_URL . "?page=add_akce" ?>">Vytvořit akci</a></li>
                     <li class="tutorials"><a href="<?= BASE_URL . "?page=logout" ?>">Logout</a></li>
-                    <?php if ($_SESSION["role"] == 'reditel') { ?>
-                    <li class="about">
-                        <a href="<?= BASE_URL . "?page=user-add" ?>">Pridat uzivatele</a></li>
-                    <?php } ?>
                 <?php } else { ?>
                     <li class="about">
                         <a href="<?= BASE_URL . "?page=login" ?>">Login</a></li>

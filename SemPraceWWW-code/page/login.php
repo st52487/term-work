@@ -7,7 +7,7 @@ if (!empty($_POST) && !empty($_POST["loginMail"]) && !empty($_POST["loginPasswor
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     //get user by email and password
-    $stmt = $conn->prepare("select prijmeni, druhrole from ucitel join role USING (id_role)
+    $stmt = $conn->prepare("select id_ucitel,prijmeni, druhrole from ucitel join role USING (id_role)
 join users USING (id_ucitel) WHERE prihlasovacijmeno= :email and heslo = :password");
 
     $stmt->bindParam(':email', $_POST["loginMail"]);
@@ -17,9 +17,9 @@ join users USING (id_ucitel) WHERE prihlasovacijmeno= :email and heslo = :passwo
     if (!$user) {
         echo "user not found";
     } else {
-        echo "you are logged in. Your ID is: " . $user["prijmeni"];
         $_SESSION["username"] = $user["prijmeni"];
         $_SESSION["role"] = $user["druhrole"];
+        $_SESSION["id"] = $user["id_uitel"];
         header("Location:" . BASE_URL);
     }
 
