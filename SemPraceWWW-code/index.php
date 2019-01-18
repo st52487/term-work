@@ -27,7 +27,7 @@ function __autoload($className)
             <ul>
                 <li class="home"><a href="<?= BASE_URL ?>">Home</a></li>
                 <li class="tutorials"><a href="<?= BASE_URL . "?page=zvolTridu" ?>">Třídy</a></li>
-                <li class="home"><a>Akce</a></li>
+                <li class="home"><a href="<?= BASE_URL . "?page=show_akce" ?>">Akce</a></li>
                 <li class="home"><a>Jídelníček</a></li>
                 <li class="tutorials"><a href="<?= BASE_URL . "?page=user-read-all" ?>">Zamestnanci</a></li>
                 <?php if (!empty($_SESSION["username"])) { ?>

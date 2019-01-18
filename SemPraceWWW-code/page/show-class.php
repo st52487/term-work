@@ -2,8 +2,9 @@
 $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$stmt = $conn->prepare("select count(nazev) from trida join ucitel u on trida.id_trida = u.id_trida where id_ucitel = :id");
-$stmt->bindParam("id", $_SESSION["id"]);
+$stmt = $conn->prepare("select count(nazev) from trida join ucitel u on trida.id_trida = u.id_trida where id_ucitel = :id and u.id_trida = :idTrida");
+$stmt->bindParam(":id", $_SESSION["id"]);
+$stmt->bindParam(":idTrida", $_GET["id_trida"]);
 $stmt->execute();
 
 $user = $stmt->fetch();
