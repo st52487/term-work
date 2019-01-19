@@ -44,9 +44,5 @@ if (file_exists($file)) {
 <footer>
     <?php include "./page/footer.php"; ?>
 </footer>
-
-
-
-
 </body>
 </html>

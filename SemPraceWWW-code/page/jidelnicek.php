@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 ?>
 
-<form method="post" enctype="multipart/form-data">JHSon file
+<form method="post" enctype="multipart/form-data" class="simple-form" >JHSon file
     <input type="file" name="jsonFile">
     <br>
     <input type="submit" value="Import" name="buttonImport">

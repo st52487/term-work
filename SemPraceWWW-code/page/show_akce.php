@@ -45,6 +45,7 @@ if ($_SESSION["role"] == 'reditel') {
     <td >' . $row[3] . '</td >
     <td>
         <a href="?page=delete_akce&action=delete&id_akce=' . $row["id_akce"] . '">D</a>
+        <a href="?page=update_akce&action=delete&id_akce=' . $row["id_akce"] . '">U</a>
     </td>
   </tr >';
 

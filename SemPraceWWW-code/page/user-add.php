@@ -1,3 +1,9 @@
+<main>
+    <section id="hero">
+        <div>
+            <h1 style="font-family: 'Calibri Light'">Mateřská škola Sluníčko</h1>
+        </div>
+    </section>
 <?php
 $errorFeedbacks = array();
 $successFeedback = "";
@@ -59,7 +65,7 @@ if (!empty($errorFeedbacks)) {
 }
 ?>
 
-<form method="post">
+<form method="post" class="simple-form" >
     <input type="jmeno" name="jmeno" placeholder="Your name"/>
     <input type="prijmeni" name="prijmeni" placeholder="Your prijmeni">
 
@@ -102,3 +108,4 @@ if (!empty($errorFeedbacks)) {
 
     <input type="submit" name="isSubmitted" value="Přidat">
 </form>
+</main>

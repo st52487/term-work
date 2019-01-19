@@ -1,6 +1,16 @@
+<main>
+    <section id="hero">
+        <div>
+            <h1 style="font-family: 'Calibri Light'">Mateřská škola Sluníčko</h1>
+        </div>
+    </section>
 <?php
 $errorFeedbacks = array();
 $successFeedback = "";
+
+$conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($_POST["prihlasovacijmeno"])) {
         $feedbackMessage = "username is required";
@@ -13,8 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if (empty($errorFeedbacks)) {
-        $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 
         $stmt = $conn->prepare("UPDATE users SET prihlasovacijmeno= :prihlJmeno, heslo= :heslo WHERE id_ucitel= :id");
         $stmt->bindParam(':id', $_GET["id_ucitel"]);
@@ -65,7 +74,7 @@ join role r on ucitel.id_role = r.id_role join users u on ucitel.id_ucitel = u.i
 }
 ?>
 
-<form method="post">
+<form method="post" class="simple-form">
     <input type="jmeno" name="jmeno" value="<?= $jmeno; ?>"/>
     <input type="prijmeni" name="prijmeni" value="<?= $prijmeni; ?>"/>
     <?php
@@ -103,4 +112,4 @@ join role r on ucitel.id_role = r.id_role join users u on ucitel.id_ucitel = u.i
         </select>
     <?php } ?>
     <input type="submit" name="isSubmitted" value="yes">
-</form>
+</form></main>

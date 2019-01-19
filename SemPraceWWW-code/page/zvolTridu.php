@@ -19,7 +19,7 @@
 $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$data = $conn->query("SELECT id_trida,nazev FROM trida")->fetchAll();
+$data = $conn->query("SELECT id_trida,nazev, popis FROM trida")->fetchAll();
 
 if($_SESSION["role"] != 'reditel') {
     echo '<table width="400px" border="1">';
@@ -27,6 +27,7 @@ if($_SESSION["role"] != 'reditel') {
     echo '  
   <tr>
     <th>Nazev třídy</th>
+    <th>Popis</th>
   </tr>';
 
     foreach ($data as $row) {
@@ -34,6 +35,7 @@ if($_SESSION["role"] != 'reditel') {
         echo '   
    <tr > 
    <td ><a href="?page=show-class&action=open&id_trida=' . $row["id_trida"] . '">' . $row["nazev"] . '</a></td >
+   <td >' . $row["popis"] . '</td >
   </tr >';
     }
     echo '</table>';
@@ -48,7 +50,8 @@ echo '<table width="400px" border="1">';
 
 echo '  
   <tr>
-    <th>Nazev</th>
+    <th>Nazev třídy</th>
+    <th>Popis</th>
   </tr>';
 
 foreach ($data as $row) {
@@ -56,8 +59,11 @@ foreach ($data as $row) {
     echo '   
    <tr > 
    <td ><a href="?page=show-class&action=open&id_trida='.$row["id_trida"].'">'.$row["nazev"].'</a></td >
+   <td >' . $row["popis"] . '</td >
    <td>
-        <a href="?page=delete_class&action=delete&id_trida=' . $row["id_trida"] . '">Smazat</a></td> 
+        <a href="?page=delete_class&action=delete&id_trida=' . $row["id_trida"] . '">Smazat</a>
+        <a href="?page=update_class&action=delete&id_trida=' . $row["id_trida"] . '">Update</a>
+        </td> 
   </tr >';
 
 }

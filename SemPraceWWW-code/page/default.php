@@ -23,6 +23,7 @@
             <p>
                 Záměrem programu Škola podporující zdraví (dále jen ŠPZ) je aplikovat strategii podpory zdraví na podmínky školy a přispět k její účasti na vlastní proměně a rozvoji. V praxi školy to znamená, že všechno, co se ve škole dělá záměrně (vyučovací kurikulum, školou organizované činnosti), a rovněž všechno, co se v ní děje živelně (skryté kurikulum, kultura či ethos školy), se pedagogové učí promýšlet a ovlivňovat pod zorným úhlem obou pólů možných důsledků, jaké má působení školy na zdraví svých lidí – žáků, pedagogů, zaměstnanců, rodičů, spoluobčanů v obci – důsledků pozitivních (protektivních, podporujících zdraví) a negativních (rizikových, ohrožujících zdraví). Svým zaměřením na podporu zdraví člověka (ve všech jeho aspektech, u všech aktérů a ve všech složkách prostředí) poskytuje program jak eticky, tak vědecky zdůvodněný nový rozměr pro plánování, provádění i posuzování činnosti školy, který ve svém důsledku vypovídá o její kvalitě.
             </p>
+            <img src="images/zdravaSkola.png" alt="Zdrava skola">
         </div>
     </div>
 </main>

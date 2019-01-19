@@ -1,3 +1,9 @@
+<main>
+    <section id="hero">
+        <div>
+            <h1 style="font-family: 'Calibri Light'">Mateřská škola Sluníčko</h1>
+        </div>
+    </section>
 <?php
 $vypis = "";
 
@@ -48,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($vypis)) {
 
 
 
-<form method="post">
+<form method="post" class="simple-form">
     <input type="nazev" name="nazev" placeholder="Nazev"/>
     <label for="description-textarea">Popis:</label>
     <textarea name="popis" id="popis"></textarea>
@@ -72,3 +78,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($vypis)) {
     ?>
     <input type="submit" name="isSubmitted" value="yes">
 </form>
+</main>

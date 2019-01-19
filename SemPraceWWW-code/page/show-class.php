@@ -64,7 +64,7 @@ $data = $stmt->fetchAll();
 
 
 if ($_SESSION["role"] == 'reditel' || $user["count(nazev)"] > 0) { ?>
-    <form method="post">
+    <form method="post" class="simple-form" >
         <input type="jmeno" name="jmeno" placeholder="Jmeno">
         <input type="prijmeni" name="prijmeni" placeholder="Prijmeni">
         <input type="vek" name="vek" placeholder="Vek ditete">
@@ -73,7 +73,7 @@ if ($_SESSION["role"] == 'reditel' || $user["count(nazev)"] > 0) { ?>
         <input type="ulice" name="ulice" placeholder="Ulice">
         <input type="psc" name="psc" placeholder="psc">
         <input type="mesto" name="mesto" placeholder="mesto">
-        <input type="submit" name="isSubmitted" value="yes">
+        <input type="submit" name="isSubmitted" value="Přidat dítě">
     </form>
     <?php
 
@@ -113,7 +113,8 @@ if ($_SESSION["role"] == 'reditel' || $user["count(nazev)"] > 0) { ?>
     <td >' . $row["psc"] . '</td >
     <td >' . $row["mesto"] . '</td >
     <td>
-        <a href="?page=delete-dite&action=delete&id_dite=' . $row["id_dite"] . '">D</a>
+        <a href="?page=delete-dite&action=delete&id_dite=' . $row["id_dite"] . '">Smazat</a>
+        <a href="?page=update_dite&action=delete&id_dite=' . $row["id_dite"] . '">Upravit</a>
     </td>
   </tr >';
 
