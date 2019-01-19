@@ -3,15 +3,6 @@ ob_start();
 session_start();
 include 'config.php';
 
-function __autoload($className)
-{
-    if (file_exists('./class/' . $className . '.php')) {
-        require_once './class/' . $className . '.php';
-        return true;
-    }
-    return false;
-}
-
 ?>
 <html>
 <head>
@@ -28,7 +19,7 @@ function __autoload($className)
                 <li class="home"><a href="<?= BASE_URL ?>">Home</a></li>
                 <li class="tutorials"><a href="<?= BASE_URL . "?page=zvolTridu" ?>">Třídy</a></li>
                 <li class="home"><a href="<?= BASE_URL . "?page=show_akce" ?>">Akce</a></li>
-                <li class="home"><a>Jídelníček</a></li>
+                <li class="tutorials"><a href="<?= BASE_URL . "?page=jidelnicek" ?>">Jídelníček</a></li>
                 <li class="tutorials"><a href="<?= BASE_URL . "?page=user-read-all" ?>">Zamestnanci</a></li>
                 <?php if (!empty($_SESSION["username"])) { ?>
                     <li class="tutorials"><a href="<?= BASE_URL . "?page=add_akce" ?>">Vytvořit akci</a></li>
