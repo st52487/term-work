@@ -1,3 +1,9 @@
+<main>
+    <section id="hero">
+        <div>
+            <h1 style="font-family: 'Calibri Light'">Mateřská škola Sluníčko</h1>
+        </div>
+    </section>
 <?php
 
 if (!empty($_POST) && !empty($_POST["loginMail"]) && !empty($_POST["loginPassword"])) {
@@ -30,12 +36,12 @@ join users USING (id_ucitel) WHERE prihlasovacijmeno= :email and heslo = :passwo
 
 
 ?>
+<form method="post" class="simple-form">
+
+        <input type="email" name="loginMail" placeholder="Insert your email">
+        <input type="password" name="loginPassword" placeholder="Password">
+        <input type="submit" value="Log in">
+
+</form></main>
 
 
-<form method="post">
-
-    <input type="email" name="loginMail" placeholder="Insert your email">
-    <input type="password" name="loginPassword" placeholder="Password">
-    <input type="submit" value="Log in">
-
-</form>

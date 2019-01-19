@@ -1,9 +1,29 @@
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Etiam neque. Nulla est. In convallis. Praesent dapibus. Nunc dapibus tortor vel mi dapibus sollicitudin. Aliquam erat volutpat. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Nullam faucibus mi quis velit. Sed ac dolor sit amet purus malesuada congue. Nam sed tellus id magna elementum tincidunt. Etiam bibendum elit eget erat. Aliquam in lorem sit amet leo accumsan lacinia. Proin in tellus sit amet nibh dignissim sagittis. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Proin in tellus sit amet nibh dignissim sagittis. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam.
+<section id="hero">
+    <div>
+        <h1 style="font-family: 'Calibri Light'">Mateřská škola Sluníčko</h1>
+    </div>
+</section>
+<main>
+    <div class="center-wrapper">
+        <div>
+            <h2 id="C4">Vítá Vás Mateřská škola Sluníčko.</h2>
+            <p>
+                Vážení rodiče,
+                pokud pro své dítě hledáte celodenní péči se zajímavým programem v přátelské atmosféře, je pro vás „Předškolní zařízení Sluníčko tou správnou volbou.
+            </p>
+            <p>
+            <h4>Proč právě MŠ Sluníčko?</h4>
+            Naše škola je zapojena do programu alternativního vzdělávání Začít spolu a dále je také zařazena do projektu Zdravá školka. Tyto programy přispívají ke všestrannému rozvoji vašeho dítěte, poskytuje poznatky, které využije k dalšímu vzdělávání a k budoucímu životu. Snaží se vytvářet příjemné prostředí pro vaše děti, aby pobyt ve škole byl pro ně příjemnou zkušeností. Dále také úzce spolupracuje s rodinou (např. školní akce a komunikace).
+            </p>
+            <p>
+            <h4>Co je alternativní vzdělávání Začít spolu?</h4>
+            Vzdělávací program Začít spolu (v mezinárodním označení Step by Step) představuje tzv. otevřený vzdělávací systém, který vychází z konstruktivistického pojetí přístupu k učení, staví na humanistických a demokratických principech ve vzdělávání, při bezpodmínečném uplatňování pedagogického principu zaměřeného na dítě (pedocentrismus). Vzdělávací program Začít spolu zdůrazňuje individuální přístup k dítěti a partnerství školy, rodiny i širší společnosti v oblasti výchovy a vzdělávání. Prosazuje a umožňuje inkluzi dětí se speciálními potřebami. Program svými východisky úzce koresponduje se současnými požadavky na výchovu a vzdělávání, které jsou v souladu s požadavky formulovanými v Rámcovém programu pro předškolní vzdělávání a Rámcovém vzdělávacím programu pro základní vzdělávání.
+            </p>
+            <h4>Co je program Zdravá škola?</h4>
+            <p>
+                Záměrem programu Škola podporující zdraví (dále jen ŠPZ) je aplikovat strategii podpory zdraví na podmínky školy a přispět k její účasti na vlastní proměně a rozvoji. V praxi školy to znamená, že všechno, co se ve škole dělá záměrně (vyučovací kurikulum, školou organizované činnosti), a rovněž všechno, co se v ní děje živelně (skryté kurikulum, kultura či ethos školy), se pedagogové učí promýšlet a ovlivňovat pod zorným úhlem obou pólů možných důsledků, jaké má působení školy na zdraví svých lidí – žáků, pedagogů, zaměstnanců, rodičů, spoluobčanů v obci – důsledků pozitivních (protektivních, podporujících zdraví) a negativních (rizikových, ohrožujících zdraví). Svým zaměřením na podporu zdraví člověka (ve všech jeho aspektech, u všech aktérů a ve všech složkách prostředí) poskytuje program jak eticky, tak vědecky zdůvodněný nový rozměr pro plánování, provádění i posuzování činnosti školy, který ve svém důsledku vypovídá o její kvalitě.
+            </p>
+        </div>
+    </div>
+</main>
 
-Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Integer vulputate sem a nibh rutrum consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean fermentum risus id tortor. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Nam sed tellus id magna elementum tincidunt. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Pellentesque arcu. Duis viverra diam non justo. Integer malesuada. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Mauris dictum facilisis augue. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Ut tempus purus at lorem. Integer vulputate sem a nibh rutrum consequat.
-
-Donec vitae arcu. Mauris dictum facilisis augue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Pellentesque arcu. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Fusce aliquam vestibulum ipsum. Suspendisse sagittis ultrices augue. Donec quis nibh at felis congue commodo. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Praesent id justo in neque elementum ultrices. Mauris dictum facilisis augue. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-Aliquam erat volutpat. Nullam at arcu a est sollicitudin euismod. Aliquam erat volutpat. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Etiam posuere lacus quis dolor. Duis viverra diam non justo. Duis pulvinar. Pellentesque arcu. Aliquam erat volutpat. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce consectetuer risus a nunc. Aliquam in lorem sit amet leo accumsan lacinia. Mauris elementum mauris vitae tortor.
-
-Duis condimentum augue id magna semper rutrum. Quisque tincidunt scelerisque libero. Aenean vel massa quis mauris vehicula lacinia. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Curabitur sagittis hendrerit ante. Nullam at arcu a est sollicitudin euismod. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Duis viverra diam non justo. Quisque porta. Curabitur sagittis hendrerit ante. Praesent id justo in neque elementum ultrices. Ut tempus purus at lorem. Nullam at arcu a est sollicitudin euismod. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulu

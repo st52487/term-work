@@ -1,3 +1,10 @@
+<main>
+    <section id="hero">
+        <div>
+            <h1 style="font-family: 'Calibri Light'">Mateřská škola Sluníčko</h1>
+        </div>
+    </section>
+
 <?php
 require 'database.php';
 
@@ -30,4 +37,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="file" name="jsonFile">
     <br>
     <input type="submit" value="Import" name="buttonImport">
-</form>
+</form></main>

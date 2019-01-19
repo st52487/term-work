@@ -4,49 +4,49 @@ session_start();
 include 'config.php';
 
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta content="text/html" charset="utf-8">
-    <title>Úvodní stránka - Mateřská škola Jizerská</title>
-    <link rel="stylesheet" type="text/css" href="indexStyles.css">
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mateřská škola Sluníčko</title>
 </head>
 <body>
-<div class="grid-container">
-    <div class="item1"></div>
-    <div class="item2">
-        <div class="nav">
-            <ul>
-                <li class="home"><a href="<?= BASE_URL ?>">Home</a></li>
-                <li class="tutorials"><a href="<?= BASE_URL . "?page=zvolTridu" ?>">Třídy</a></li>
-                <li class="home"><a href="<?= BASE_URL . "?page=show_akce" ?>">Akce</a></li>
-                <li class="tutorials"><a href="<?= BASE_URL . "?page=jidelnicek" ?>">Jídelníček</a></li>
-                <li class="tutorials"><a href="<?= BASE_URL . "?page=user-read-all" ?>">Zamestnanci</a></li>
-                <?php if (!empty($_SESSION["username"])) { ?>
-                    <li class="tutorials"><a href="<?= BASE_URL . "?page=add_akce" ?>">Vytvořit akci</a></li>
-                    <li class="tutorials"><a href="<?= BASE_URL . "?page=logout" ?>">Logout</a></li>
-                <?php } else { ?>
-                    <li class="about">
-                        <a href="<?= BASE_URL . "?page=login" ?>">Login</a></li>
-                <?php } ?>
-            </ul>
-        </div>
-    </div>
-    <div class="item3">
-        <?php
-        $file = "./page/" . $_GET["page"] . ".php";
-        if (file_exists($file)) {
-            include $file;
-        } else {
-            include "./page/default.php";
-        }
-        ?>
-    </div>
-    <div class="item4">
-        sfkgsdgk
-    </div>
-    <div class="item5"><p>
-            <?php include "./page/footer.php"; ?>
-    </div>
-</div>
+
+<header>
+
+    <nav id="nav">
+        <a href="<?= BASE_URL ?>">Home</a>
+        <a href="<?= BASE_URL . "?page=zvolTridu" ?>">Třídy</a>
+        <a href="<?= BASE_URL . "?page=show_akce" ?>">Akce</a>
+        <a href="<?= BASE_URL . "?page=jidelnicek" ?>">Jídelníček</a>
+        <a href="<?= BASE_URL . "?page=user-read-all" ?>">Zamestnanci</a>
+        <?php if (!empty($_SESSION["username"])) { ?>
+        <a href="<?= BASE_URL . "?page=add_akce" ?>">Vytvořit akci</a>
+        <a href="<?= BASE_URL . "?page=logout" ?>">Logout</a>
+        <?php } else { ?>
+        <a href="<?= BASE_URL . "?page=login" ?>">Login</a>
+        <?php } ?>
+    </nav>
+</header>
+<?php
+$file = "./page/" . $_GET["page"] . ".php";
+if (file_exists($file)) {
+    include $file;
+} else {
+    include "./page/default.php";
+}
+?>
+<footer>
+    <?php include "./page/footer.php"; ?>
+</footer>
+
+
+
+
 </body>
 </html>

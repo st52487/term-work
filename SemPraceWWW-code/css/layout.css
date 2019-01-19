@@ -1,0 +1,144 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: BLACK;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: 	#F0E68C;
+    height: 50px;
+}
+
+header nav a {
+    display: inline-block;
+    color: BLACK;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    background-color: 	#FF7F50;
+}
+
+#header-web-title {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+#hero {
+    height: 100%;
+    background: url("./../images/trida.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+#hero h1 {
+    font-size: 5em;
+}
+
+#hero a {
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 5px;
+    color: #4a4a4a;
+    border: 1px solid white;
+    transition: 1s;
+}
+
+#hero a:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.full-width-wrapper, main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+main{
+    margin-top: 75px;
+    text-align: center;
+    min-height: 300px;
+    padding-bottom: 450px;
+}
+
+.flex-wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+footer {
+    margin-top: 20px;
+    height:50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F0E68C;
+    color: black;
+}
+
+.simple-form input {
+    margin: 0 .25rem;
+    min-width: 125px;
+    border: 1px solid #eee;
+    border-left: 3px solid;
+    border-radius: 5px;
+    transition: border-color .5s ease-out;
+}
+.simple-form input:optional {
+    border-left-color: #999;
+}
+.simple-form input:required {
+    border-left-color: palegreen;
+}
+.simple-form input:invalid {
+    border-left-color: salmon;
+}
+
+form{
+    margin-top: 50px;
+}
+
+table, td, th {
+    margin-top: 150px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
