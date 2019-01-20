@@ -23,92 +23,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if ($UploadOk == true) {
-        if (move_uploaded_file($_FILES['jsonFile']['tmp_name'], $uploadfile)) {
+        try {
+            if (move_uploaded_file($_FILES['jsonFile']['tmp_name'], $uploadfile)) {
+                $data = file_get_contents($uploadfile); // put the contents of the file into a variable
+                $obj = json_decode($data); // decode the JSON feed
 
-            //$jsondata = file_get_contents($uploadfile);
-            //$data = file_get_contents($uploadfile); // put the contents of the file into a variable
-            //$obj = json_decode($data);
-          //  echo "JE TO TAM!!!";
-            $data = file_get_contents($uploadfile); // put the contents of the file into a variable
-            $obj = json_decode($data); // decode the JSON feed
-
-            foreach ($obj as $obj) {
-                echo $obj->polivka . '<br>';
-                echo $obj->hlavniJidlo . '<br>';
-                echo $obj->svacina . '<br>';
-                echo $obj->idTrida . '<br>';
-                echo $obj->den . '<br>';
-
-
-
-                $stmt = $conn->prepare("INSERT INTO jidelnicek(polivka, hlavni_jidlo, svacina, id_trida, den) VALUES 
+                foreach ($obj as $obj) {
+                    $stmt = $conn->prepare("INSERT INTO jidelnicek(polivka, hlavni_jidlo, svacina, id_trida, den) VALUES 
 (:polivka, :hlavni_jidlo,:svacina,:id_trida,:den)");
-                $stmt->bindParam(':polivka', $obj->polivka);
-                $stmt->bindParam(':hlavni_jidlo', $obj->hlavniJidlo);
-                $stmt->bindParam(':svacina', $obj->svacina);
-                $stmt->bindParam(':id_trida', $obj->idTrida);
-                $stmt->bindParam(':den', $obj->den);
-                $stmt->execute();
-
-
-             /*   $sql5 = "INSERT INTO `jidelnicek` (`polivka`, `hlavni_jidlo`, `svacina`, `id_trida`, `den`) VALUES (?,?,?,?,?);";
-                if ($stmt = $db->prepare($sql5)) {
-                    $stmt->bind_param("sssis", $character->polivka, $character->hlavniJidlo, $character->svacina, $character->idTrida,$character->den);
+                    $stmt->bindParam(':polivka', $obj->polivka);
+                    $stmt->bindParam(':hlavni_jidlo', $obj->hlavniJidlo);
+                    $stmt->bindParam(':svacina', $obj->svacina);
+                    $stmt->bindParam(':id_trida', $obj->idTrida);
+                    $stmt->bindParam(':den', $obj->den);
                     $stmt->execute();
                 }
-               /* echo $obj->hlavniJidlo . '<br>';
-                echo $obj->svacina . '<br>';
-                echo $obj->idTrida . '<br>';
-                echo $obj->den . '<br>';
-                echo $character->name . '<br>';*/
             }
-
-           /* foreach ($obj as $obj) {
-                echo $obj->polivka . '<br>';
-                echo $obj->hlavniJidlo . '<br>';
-                echo $obj->svacina . '<br>';
-                echo $obj->idTrida . '<br>';
-                echo $obj->den . '<br>';
-                }
-              /*  $sql5 = "INSERT INTO `jidelnicek` (`polivka`, `hlavni_jidlo`, `svacina`, `id_trida`, `den`) VALUES (?,?,?,?,?);";
-                if ($stmt = $db->prepare($sql5)) {
-                    $stmt->bind_param("sssis", $character->polivka, $character->hlavniJidlo, $character->svacina, $character->idTrida,$character->den);
-                    $stmt->execute();
-                }
-          /*  foreach ($obj as $v) {
-
-
-                $polivka = $v["polivka"];
-                $hlavniJidlo = $v["hlavniJidlo"];
-                $svacina = $v["svacina"];
-                $idTrida = $v["idTrida"];
-                $den = $v["den"];
-
-
-                echo $polivka;
-                echo $hlavniJidlo;
-                echo $svacina;
-                echo $idTrida;
-                echo $den;
-                /*$sql5 = "INSERT INTO `jidelnicek` (`polivka`, `hlavni_jidlo`, `svacina`, `id_trida`, `den`) VALUES (?,?,?,?,?);";
-                if ($stmt = $db->prepare($sql5)) {
-                    $stmt->bind_param("sssis", $polivka, $hlavniJidlo, $svacina, $idTrida, $den);
-                    $stmt->execute();
-                }*/
-
-
-            }
-
-
-
-        echo "hotovo@@!";
+        }catch(Exception $e) {
+            echo 'Chyba: ' .$e->getMessage();
+        }
+        echo "Import proveden!";
     }
 }
 
-?>
 
+if($_SESSION["role"] == 'reditel') {?>
 <form method="post" enctype="multipart/form-data" class="simple-form" >JHSon file
     <input type="file" name="jsonFile">
     <br>
     <input type="submit" value="Import" name="buttonImport">
 </form></main>
+<?php } ?>
+
+
+scaddddddddddJIDELCNICIDFIWf
+d
+s
+fsd
+f
+e

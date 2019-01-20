@@ -23,12 +23,16 @@ $popis = $akce["popis"];
 $datum = $akce["datum"];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $stmt = $conn->prepare("UPDATE akce_skoly SET nazev = :nazev, popis = :popis, datum = :datum where id_akce = :id");
-    $stmt->bindParam(':nazev', $_POST["nazev"]);
-    $stmt->bindParam(':popis', $_POST["popis"]);
-    $stmt->bindParam(':datum', $_POST["datum"]);
-    $stmt->bindParam(':id', $_GET["id_akce"]);
-    $stmt->execute();
+    try {
+        $stmt = $conn->prepare("UPDATE akce_skoly SET nazev = :nazev, popis = :popis, datum = :datum where id_akce = :id");
+        $stmt->bindParam(':nazev', $_POST["nazev"]);
+        $stmt->bindParam(':popis', $_POST["popis"]);
+        $stmt->bindParam(':datum', $_POST["datum"]);
+        $stmt->bindParam(':id', $_GET["id_akce"]);
+        $stmt->execute();
+    }catch(Exception $e) {
+        echo 'Chyba: ' .$e->getMessage();
+    }
 
     echo "Akce upravena!";
 

@@ -23,11 +23,15 @@ $popis = $trida["popis"];
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $stmt = $conn->prepare("UPDATE trida SET nazev = :nazev, popis = :popis where id_trida = :id");
-    $stmt->bindParam(':nazev', $_POST["nazev"]);
-    $stmt->bindParam(':popis', $_POST["popis"]);
-    $stmt->bindParam(':id', $_GET["id_trida"]);
-    $stmt->execute();
+    try {
+        $stmt = $conn->prepare("UPDATE trida SET nazev = :nazev, popis = :popis where id_trida = :id");
+        $stmt->bindParam(':nazev', $_POST["nazev"]);
+        $stmt->bindParam(':popis', $_POST["popis"]);
+        $stmt->bindParam(':id', $_GET["id_trida"]);
+        $stmt->execute();
+    }catch(Exception $e) {
+        echo 'Chyba: ' .$e->getMessage();
+    }
 
     echo "Třída upravena!";
 

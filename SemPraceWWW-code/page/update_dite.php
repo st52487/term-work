@@ -40,28 +40,32 @@ $mesto = $kontaktDitete["mesto"];
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $stmt = $conn->prepare("UPDATE dite SET jmeno = :jmeno, prijmeni = :prijmeni, vek = :vek, id_trida = :id_trida where id_dite = :id");
-    $stmt->bindParam(':jmeno', $_POST["jmeno"]);
-    $stmt->bindParam(':prijmeni', $_POST["prijmeni"]);
-    $stmt->bindParam(':vek', $_POST["vek"]);
-    if($_SESSION["role"] == 'reditel'){
-        $stmt->bindParam(':id_trida', $_POST["selectTrida"]);
-    }else{
-        $stmt->bindParam(':id_trida', $idTrida);
+    try {
+        $stmt = $conn->prepare("UPDATE dite SET jmeno = :jmeno, prijmeni = :prijmeni, vek = :vek, id_trida = :id_trida where id_dite = :id");
+        $stmt->bindParam(':jmeno', $_POST["jmeno"]);
+        $stmt->bindParam(':prijmeni', $_POST["prijmeni"]);
+        $stmt->bindParam(':vek', $_POST["vek"]);
+        if ($_SESSION["role"] == 'reditel') {
+            $stmt->bindParam(':id_trida', $_POST["selectTrida"]);
+        } else {
+            $stmt->bindParam(':id_trida', $idTrida);
+        }
+
+        $stmt->bindParam(':id', $_GET["id_dite"]);
+        $stmt->execute();
+
+
+        $stmt = $conn->prepare("UPDATE kontakt SET telefon = :telefon, email = :email, ulice = :ulice, psc = :psc, mesto = :mesto where id_kontakt = :id");
+        $stmt->bindParam(':telefon', $_POST["telefon"]);
+        $stmt->bindParam(':email', $_POST["email"]);
+        $stmt->bindParam(':ulice', $_POST["ulice"]);
+        $stmt->bindParam(':psc', $_POST["psc"]);
+        $stmt->bindParam(':mesto', $_POST["mesto"]);
+        $stmt->bindParam(':id', $idKontakt);
+        $stmt->execute();
+    }catch(Exception $e) {
+        echo 'Chyba: ' .$e->getMessage();
     }
-
-    $stmt->bindParam(':id', $_GET["id_dite"]);
-    $stmt->execute();
-
-
-    $stmt = $conn->prepare("UPDATE kontakt SET telefon = :telefon, email = :email, ulice = :ulice, psc = :psc, mesto = :mesto where id_kontakt = :id");
-    $stmt->bindParam(':telefon', $_POST["telefon"]);
-    $stmt->bindParam(':email', $_POST["email"]);
-    $stmt->bindParam(':ulice', $_POST["ulice"]);
-    $stmt->bindParam(':psc', $_POST["psc"]);
-    $stmt->bindParam(':mesto', $_POST["mesto"]);
-    $stmt->bindParam(':id', $idKontakt);
-    $stmt->execute();
 
     echo "Dítě upraveno!";
 

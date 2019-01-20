@@ -24,20 +24,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($errorFeedbacks)) {
 
+        try {
+            $stmt = $conn->prepare("UPDATE users SET prihlasovacijmeno= :prihlJmeno, heslo= :heslo WHERE id_ucitel= :id");
+            $stmt->bindParam(':id', $_GET["id_ucitel"]);
+            $stmt->bindParam(':prihlJmeno', $_POST["prihlasovacijmeno"]);
+            $stmt->bindParam(':heslo', md5($_POST["heslo"]));
+            $stmt->execute();
 
-        $stmt = $conn->prepare("UPDATE users SET prihlasovacijmeno= :prihlJmeno, heslo= :heslo WHERE id_ucitel= :id");
-        $stmt->bindParam(':id', $_GET["id_ucitel"]);
-        $stmt->bindParam(':prihlJmeno', $_POST["prihlasovacijmeno"]);
-        $stmt->bindParam(':heslo', md5($_POST["heslo"]));
-        $stmt->execute();
-
-        $stmt = $conn->prepare("UPDATE ucitel SET jmeno= :jmeno, prijmeni= :prijmeni, id_role = :id_role, id_trida = :id_trida WHERE id_ucitel= :id");
-        $stmt->bindParam(':id', $_GET["id_ucitel"]);
-        $stmt->bindParam(':jmeno', $_POST["jmeno"]);
-        $stmt->bindParam(':prijmeni', $_POST["prijmeni"]);
-        $stmt->bindParam(':id_role', $_POST["select"]);
-        $stmt->bindParam(':id_trida', $_POST["selectTrida"]);
-        $stmt->execute();
+            $stmt = $conn->prepare("UPDATE ucitel SET jmeno= :jmeno, prijmeni= :prijmeni, id_role = :id_role, id_trida = :id_trida WHERE id_ucitel= :id");
+            $stmt->bindParam(':id', $_GET["id_ucitel"]);
+            $stmt->bindParam(':jmeno', $_POST["jmeno"]);
+            $stmt->bindParam(':prijmeni', $_POST["prijmeni"]);
+            $stmt->bindParam(':id_role', $_POST["select"]);
+            $stmt->bindParam(':id_trida', $_POST["selectTrida"]);
+            $stmt->execute();
+        }catch(Exception $e) {
+            echo 'Chyba: ' .$e->getMessage();
+        }
 
 
         $successFeedback = "User was updated";
