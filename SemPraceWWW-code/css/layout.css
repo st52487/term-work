@@ -15,32 +15,31 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1;
+
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: 	#F0E68C;
-    height: 50px;
 }
 
 header nav a {
-    display: inline-block;
-    color: BLACK;
+
+    float: left;
+    display: block;
+    color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: underline;
-    font-size: 18px;
+    text-decoration: none;
 }
 
 header nav a:hover {
     background-color: 	#FF7F50;
 }
 
-#header-web-title {
-    color: white;
-    font-size: 30px;
-    margin: 10px;
+#hero h1 {
+    font-size: 5em;
 }
-
 
 #hero {
     height: 100%;
@@ -53,19 +52,6 @@ header nav a:hover {
     justify-content: center;
     color: white;
 
-}
-
-#hero h1 {
-    font-size: 5em;
-}
-
-#hero a {
-    padding: 20px 40px;
-    background-color: white;
-    border-radius: 5px;
-    color: #4a4a4a;
-    border: 1px solid white;
-    transition: 1s;
 }
 
 #hero a:hover {

@@ -6,10 +6,12 @@
     </section>
 
 <?php
+
 $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+if (isset($_POST["buttonImport"])) {
     $uploaddir = './uploads/';
     $uploadfile = $uploaddir . basename($_FILES['jsonFile']['name']);
     $extension = array("json", "JSON");
@@ -45,20 +47,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Import proveden!";
     }
 }
-
-
 if($_SESSION["role"] == 'reditel') {?>
-<form method="post" enctype="multipart/form-data" class="simple-form" >JHSon file
-    <input type="file" name="jsonFile">
-    <br>
-    <input type="submit" value="Import" name="buttonImport">
-</form></main>
-<?php } ?>
+    <form method="post" enctype="multipart/form-data" class="simple-form" >
+        <label>Zadejte soubor</label>
+        <input type="file" name="jsonFile">
+        <input type="submit" value="Import" name="buttonImport">
+    </form>
+<?php }
 
 
-scaddddddddddJIDELCNICIDFIWf
-d
-s
-fsd
-f
-e
+
+$data = $conn->query("SELECT * from jidelnicek")->fetchAll();
+
+foreach ($data as $row) {
+    echo '<h4>' . $row["den"] . '</h4>';
+    echo "=================================";
+    echo '<h5><b>' . "Polévka: "  .'</b>'. $row["polivka"] . '</h5>';
+    echo '<h5><b>' . "Hlavní jídlo: "  .'</b>'. $row["hlavni_jidlo"] . '</h5>';
+    echo '<h5><b>' . "Svačina: "  .'</b>'. $row["svacina"] . '</h5>';
+
+
+    $stmt = $conn->prepare("SELECT nazev from trida where id_trida = :id");
+    $stmt->bindParam(':id',$row["id_trida"] );
+    $stmt->execute();
+    $na = $stmt->fetch();
+
+    echo '<h5><b>' . "Třída: "  .'</b>'. $na["nazev"] . '</h5><br>';
+}
+?>
+</main>

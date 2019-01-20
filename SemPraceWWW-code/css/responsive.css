@@ -1,47 +1,56 @@
 @media (max-width: 960px) {
-
-    header {
-        justify-content: space-between;
+    header { /*toto */
         height: auto;
     }
 
-    #header-logo, header nav a {
-        display: none;
+    main{ /*toto podle veliksoti obsahu */
+        padding-top: 600px;
     }
 
-    .nav-responsive a {
-        display: block;
+
+    #nav a { /*toto */
+        /*display: none;*/
+
+        float: none;
     }
 
-    #header-web-title {
-        display: block;
-        align-self: flex-start;
-    }
-
-    #nav-hamburger-icon {
-        width: 60px;
-        display: block;
-        align-self: flex-start;
-    }
-
-    .card {
+    footer{
         width: 100%;
-        text-align: center;
     }
 
-    #hero {
-        width: 100%;
-        height: auto;
-    }
 
-    .full-width-wrapper, main {
+    .full-width-wrapper, main { /* toto taky */
         width: 100%;
         margin: 0 auto;
     }
 
-    footer section {
-        width: 100%;
-        margin: 25px;
+
+    #hero {/*toto smaze tu fotku velkou */
+        display: none;
+    }
+
+}
+
+
+@media print
+{    
+    footer, header
+    {
+        display: none;
+    }
+    main
+    {
+        margin-top: 0px;
+        padding-bottom: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
 

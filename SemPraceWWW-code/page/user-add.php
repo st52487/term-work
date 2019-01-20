@@ -9,7 +9,7 @@ $errorFeedbacks = array();
 $successFeedback = "";
 
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if (isset($_POST["buttonImport"])) {
     if (empty($_POST["prihlasovacijmeno"])) {
         $feedbackMessage = "username is required";
         array_push($errorFeedbacks, $feedbackMessage);
