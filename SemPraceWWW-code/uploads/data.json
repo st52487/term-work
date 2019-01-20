@@ -1,14 +1,37 @@
 [
 	{
-		"name": "Aragorn",
-		"race": "Human"
+		"polivka": "Bramborová",
+		"hlavniJidlo": "Kuře na paprice",
+		"svacina": "Přesnídávka",
+		"idTrida": "1",
+		"den": "pondělí"
 	},	
 	{
-		"name": "Legolas",
-		"race": "Elf"
+		"polivka": "rajská",
+		"hlavniJidlo": "Řízek s kaší",
+		"svacina": "chleba s rybí pomazánkou",
+		"idTrida": "1",
+		"den": "uterý"
 	},
 	{
-		"name": "Gimli",
-		"race": "Dwarf"
+		"polivka": "písmenková",
+		"hlavniJidlo": "hranolky",
+		"svacina": "jablko",
+		"idTrida": "1",
+		"den": "středa"
+	},
+	{
+		"polivka": "kulajda",
+		"hlavniJidlo": "karbanátek",
+		"svacina": "hruška",
+		"idTrida": "1",
+		"den": "čtvrtek"
+	},
+	{
+		"polivka": "hrachová",
+		"hlavniJidlo": "čínská směs",
+		"svacina": "rohlík s máslem",
+		"idTrida": "1",
+		"den": "pátek"
 	}
 ]
