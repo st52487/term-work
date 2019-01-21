@@ -4,7 +4,6 @@
             <h1 style="font-family: 'Calibri Light'">Mateřská škola Sluníčko</h1>
         </div>
     </section>
-
 <?php
 
 $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
@@ -48,6 +47,7 @@ if (isset($_POST["buttonImport"])) {
     }
 }
 if($_SESSION["role"] == 'reditel') {?>
+    <a href="?page=delete_jidelnicek">Smazat týdenní jídelníček</a>
     <form method="post" enctype="multipart/form-data" class="simple-form" >
         <label>Zadejte soubor</label>
         <input type="file" name="jsonFile">

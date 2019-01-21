@@ -11,7 +11,7 @@
 $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$data = $conn->query("select id_ucitel,jmeno,prijmeni,druhrole,nazev from ucitel join role r on ucitel.id_role = r.id_role join trida t on ucitel.id_trida = t.id_trida;")->fetchAll();
+$data = $conn->query("select id_ucitel,jmeno,prijmeni,druhrole,telefon, nazev from ucitel join role r on ucitel.id_role = r.id_role join trida t on ucitel.id_trida = t.id_trida;")->fetchAll();
 
 ?>
 <?php if($_SESSION["role"] == 'reditel') {?>
@@ -27,6 +27,7 @@ $data = $conn->query("select id_ucitel,jmeno,prijmeni,druhrole,nazev from ucitel
 <th>Jméno</th>
 <th>Přijmení</th>
 <th>Role</th>
+<th>Telefon</th>
 <th>Třída</th>
 </tr>
 </thead>
@@ -44,6 +45,7 @@ $data = $conn->query("select id_ucitel,jmeno,prijmeni,druhrole,nazev from ucitel
     <td >' . $row["jmeno"] . '</td >
     <td >' . $row["prijmeni"] . '</td > 
     <td >' . $row["druhrole"] . '</td >
+     <td >' . $row["telefon"] . '</td >
     <td >' . $row["nazev"] . '</td >
     <?php if ($_SESSION["role"] == \'reditel\') { ?>
     <td>
@@ -66,6 +68,7 @@ $data = $conn->query("select id_ucitel,jmeno,prijmeni,druhrole,nazev from ucitel
 <th>Jméno</th>
 <th>Přijmení</th>
 <th>Role</th>
+<th>Telefon</th>
 <th>Třída</th>
 </tr>
 </thead>
@@ -83,6 +86,7 @@ $data = $conn->query("select id_ucitel,jmeno,prijmeni,druhrole,nazev from ucitel
     <td >' . $row["jmeno"] . '</td >
     <td >' . $row["prijmeni"] . '</td > 
     <td >' . $row["druhrole"] . '</td >
+     <td >' . $row["telefon"] . '</td >
     <td >' . $row["nazev"] . '</td >
   </tr >';
 

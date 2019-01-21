@@ -31,19 +31,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindParam(':heslo', md5($_POST["heslo"]));
             $stmt->execute();
 
-            $stmt = $conn->prepare("UPDATE ucitel SET jmeno= :jmeno, prijmeni= :prijmeni, id_role = :id_role, id_trida = :id_trida WHERE id_ucitel= :id");
+            $stmt = $conn->prepare("UPDATE ucitel SET jmeno= :jmeno, prijmeni= :prijmeni, id_role = :id_role, id_trida = :id_trida, telefon = :telefon WHERE id_ucitel= :id");
             $stmt->bindParam(':id', $_GET["id_ucitel"]);
             $stmt->bindParam(':jmeno', $_POST["jmeno"]);
             $stmt->bindParam(':prijmeni', $_POST["prijmeni"]);
             $stmt->bindParam(':id_role', $_POST["select"]);
             $stmt->bindParam(':id_trida', $_POST["selectTrida"]);
+            $stmt->bindParam(':telefon', $_POST["telefon"]);
             $stmt->execute();
         }catch(Exception $e) {
             echo 'Chyba: ' .$e->getMessage();
         }
 
 
-        $successFeedback = "User was updated";
+        $successFeedback = "Uživatel aktualizován!";
     }
 }
 ?>
@@ -63,7 +64,7 @@ if (!empty($errorFeedbacks)) {
 if (empty($errorFeedbacks)) { //load data origin data from database
     $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("select jmeno,prijmeni,druhrole,prihlasovacijmeno,nazev, t.id_trida,r.id_role from ucitel join trida t on ucitel.id_trida = t.id_trida
+    $stmt = $conn->prepare("select jmeno,prijmeni,druhrole,prihlasovacijmeno,telefon,nazev, t.id_trida,r.id_role from ucitel join trida t on ucitel.id_trida = t.id_trida
 join role r on ucitel.id_role = r.id_role join users u on ucitel.id_ucitel = u.id_ucitel where u.id_ucitel = :id");
     $stmt->bindParam(':id', $_GET["id_ucitel"]);
     $stmt->execute();
@@ -72,6 +73,7 @@ join role r on ucitel.id_role = r.id_role join users u on ucitel.id_ucitel = u.i
     $jmeno = $user["jmeno"];
     $prijmeni = $user["prijmeni"];
     $druhRole = $user["druhrole"];
+    $telefon = $user["telefon"];
     $prihlasJmeno = $user["prihlasovacijmeno"];
     $nazev = $user["nazev"];
 }
@@ -114,5 +116,6 @@ join role r on ucitel.id_role = r.id_role join users u on ucitel.id_ucitel = u.i
             <?php } ?>
         </select>
     <?php } ?>
-    <input type="submit" name="isSubmitted" value="yes">
+    <input type="telefon" name="telefon" placeholder="Telefon" value="<?= $telefon; ?>"/>
+    <input type="submit" name="isSubmitted" value="Upravit">
 </form></main>

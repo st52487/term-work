@@ -76,6 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($vypis)) {
         <?php }
     }
     ?>
-    <input type="submit" name="isSubmitted" value="yes">
+    <input type="submit" name="isSubmitted" value="Přidat">
 </form>
 </main>

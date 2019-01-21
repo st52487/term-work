@@ -31,6 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="nazev" name="nazev" placeholder="Nazev"/>
     <label for="description-textarea">Popis:</label>
     <textarea name="popis" id="popis"></textarea>
-    <input type="submit" name="isSubmitted" value="yes">
+    <input type="submit" name="isSubmitted" value="Přidat">
 </form></main>
 

@@ -8,8 +8,7 @@
 $errorFeedbacks = array();
 $successFeedback = "";
 
-
-if (isset($_POST["buttonImport"])) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($_POST["prihlasovacijmeno"])) {
         $feedbackMessage = "username is required";
         array_push($errorFeedbacks, $feedbackMessage);
@@ -25,12 +24,13 @@ if (isset($_POST["buttonImport"])) {
         $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $stmt = $conn->prepare("INSERT INTO ucitel (jmeno, prijmeni, id_role,id_trida) 
-    VALUES (:jmeno, :prijmeni, :id_role, :id_trida)");
+        $stmt = $conn->prepare("INSERT INTO ucitel (jmeno, prijmeni, id_role,id_trida,telefon) 
+    VALUES (:jmeno, :prijmeni, :id_role, :id_trida,:telefon)");
         $stmt->bindParam(':jmeno', $_POST["jmeno"]);
         $stmt->bindParam(':prijmeni', $_POST["prijmeni"]);
         $stmt->bindParam(':id_role', $_POST["select"]);
         $stmt->bindParam(':id_trida', $_POST["selectTrida"]);
+        $stmt->bindParam(':telefon', $_POST["telefon"]);
         $stmt->execute();
 
         $stmt = $conn->prepare("SELECT id_ucitel FROM ucitel WHERE jmeno = :jmeno AND prijmeni = :prijmeni");
@@ -43,12 +43,14 @@ if (isset($_POST["buttonImport"])) {
         $stmt = $conn->prepare("INSERT INTO users(prihlasovacijmeno, heslo, id_ucitel) VALUES 
 (:prihlasovacijmeno,:heslo,:id)");
         $stmt->bindParam(':prihlasovacijmeno', $_POST["prihlasovacijmeno"]);
-        $stmt->bindParam(':heslo', $_POST["heslo"]);
+        $stmt->bindParam(':heslo', md5($_POST["heslo"]));
         $stmt->bindParam(':id', $user["id_ucitel"]);
         $stmt->execute();
 
 
-        $successFeedback = "User was added";
+
+
+        $successFeedback = "Uživatel přidán!";
     }
 }
 
@@ -105,7 +107,7 @@ if (!empty($errorFeedbacks)) {
             <?php } ?>
         </select>
     <?php } ?>
-
+    <input type="telefon" name="telefon" placeholder="Telefon">
     <input type="submit" name="isSubmitted" value="Přidat">
 </form>
 </main>
